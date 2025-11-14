@@ -25,7 +25,9 @@ public class FirstServlet extends HttpServlet {
 		response.setContentType("text/html");
 		out.println("welcome to mr."+request.getParameter("user"));
 		out.print("</br>");
+		out.print("</br>");
 		out.print("<a href='SecondServlet?uname="+request.getParameter("user")+"'>visite</a>");
 	}
 
 }
+
